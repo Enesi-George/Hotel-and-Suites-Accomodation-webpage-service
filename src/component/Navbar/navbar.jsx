@@ -1,6 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+import './navbar.css';
 import Navbar from 'react-bootstrap/Navbar';
+import { Link } from "react-router-dom";
+
+
 
 function Appbar() {
   return (
@@ -9,12 +13,12 @@ function Appbar() {
         <Navbar.Brand href="/" >FIDTECH HOTEL & SUITES</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
-          <Nav >
-          <Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/book">Book</Nav.Link>
-            <Nav.Link href="#">Our Service</Nav.Link>
-            <Nav.Link href="#"> About</Nav.Link>
-            <Nav.Link href="#">Contact</Nav.Link>
+          <Nav className='menu'>
+          <Link className='Link' to="/">Home</Link>
+            <Link className='Link' to="/book" >Book</Link>
+            <Link className='Link' to="#">Our Service</Link>
+            <Link className='Link' to="#"> About</Link>
+            <Link className='Link' to="#">Contact</Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

@@ -1,0 +1,9 @@
+.Link{
+    color: white;
+    text-decoration: none !important;
+    margin: 8px;
+    padding: 2px;
+}
+.Link:hover{
+    color: gray;
+}
