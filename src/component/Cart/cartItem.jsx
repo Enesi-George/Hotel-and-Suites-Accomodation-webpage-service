@@ -1,3 +1,4 @@
+import { Button } from "react-bootstrap";
 
 const CartItem = ({ item, onAdd, onRemove }) => {
     const { name, quantity } = item;
@@ -6,9 +7,9 @@ const CartItem = ({ item, onAdd, onRemove }) => {
       <div className="cart-item">
         <span>{name} </span>
         {/* <span>{price}</span> */}
-        <a href="#" onClick={onAdd} className="p-1 fw-bold fs-4 link-underline-light "> +</a>
+        <Button onClick={onAdd} className="px-1 py-0 bg-white text-dark  "> +</Button>
         <span>{quantity}</span>
-        <a href="#" onClick={onRemove} className="p-1 fw-bold fs-4 link-underline-light "> - </a>
+        <Button onClick={onRemove} className="px-1 py-0 bg-white text-dark "> - </Button>
       </div>
     );
   };

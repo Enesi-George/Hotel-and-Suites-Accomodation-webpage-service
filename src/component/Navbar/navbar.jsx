@@ -16,7 +16,7 @@ function Appbar() {
           <Nav className='menu'>
           <Link className='Link' to="/">Home</Link>
             <Link className='Link' to="/book" >Book</Link>
-            <Link className='Link' to="#">Our Service</Link>
+            <Link className='Link' to="/img">Our Service</Link>
             <Link className='Link' to="#"> About</Link>
             <Link className='Link' to="#">Contact</Link>
           </Nav>
